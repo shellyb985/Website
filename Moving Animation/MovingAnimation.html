@@ -4,6 +4,16 @@
 		<meta charset="utf-8`1">
 		<title>Moving Border Animation</title>
 		<style>
+
+			#TopBorderImage {
+				border-style: solid;
+				border-width: 0px 53px 60px;
+				-moz-border-image: url(BorderImageHorizontal.png) 0 53 607 repeat;
+				-webkit-border-image: url(BorderImageHorizontal.png) 0 53 607 repeat;
+				-o-border-image: url(BorderImageHorizontal.png) 0 53 607 repeat;
+				border-image: url(BorderImageHorizontal.png) 0 53 607 fill repeat;
+			}
+
 			#LeftBorderImage {
 				border-style: solid;
 				border-width: 0px 53px 607px;
@@ -19,12 +29,25 @@
 				-moz-border-image: url(BorderImage.png) 0 53 607 repeat;
 				-webkit-border-image: url(BorderImage.png) 0 53 607 repeat;
 				-o-border-image: url(BorderImage.png) 0 53 607 repeat;
-				border-image: url(BorderImage.png) 0 53 607 fill repeat;			}
+				border-image: url(BorderImage.png) 0 53 607 fill repeat;	
+			}
 
+			#BottomBorderImage {
+				border-style: solid;
+				border-width: 0px 53px 60px;
+				-moz-border-image: url(BorderImageHorizontal.png) 0 53 607 repeat;
+				-webkit-border-image: url(BorderImageHorizontal.png) 0 53 607 repeat;
+				-o-border-image: url(BorderImageHorizontal.png) 0 53 607 repeat;
+				border-image: url(BorderImageHorizontal.png) 0 53 607 fill repeat;	
+			}
 		</style>
 	</head>
 
 	<body>
+
+		<marquee behavior="scroll" direction="right" scrollamount="5">
+			<p id="TopBorderImage" > </p>
+		</marquee>
 		<marquee behavior="scroll" direction="up" scrollamount="5">
 			<p id="LeftBorderImage"> </p>
 		</marquee>
@@ -32,5 +55,10 @@
 		<marquee behavior="scroll" direction="down" scrollamount="13">
 			<p id="RightBorderImage"> </p>
 		</marquee>
+
+		<marquee behavior="scroll" direction="left" scrollamount="13">
+			<p id="BottomBorderImage"> </p>
+		</marquee>		
+
 	</body>
 </html>
