@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.leftColumn {
+    float: left;
+    width: 10.00%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.middleColumn {
+    float: left;
+    width: 80.00%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}.rightColumn {
+    float: left;
+    width: 10.00%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+  </head>
+  <body>
+<div class="row">
+  <div class="leftColumn" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="middleColumn" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="rightColumn" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div> 
+
+ </body>
+</html>
